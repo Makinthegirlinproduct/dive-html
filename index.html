@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our First Page</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        h4 {
+            color: rgb(188, 125, 15);
+        }
+
+        p {
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* ID Selector */
+        #first-h4-header {
+            text-align: center;
+        }
+
+        #custom-text {
+            text-align: center;
+            color: green;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        .custom-font {
+            font-size: 24px;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        /* Class Selector */
+        .big-header {
+            border-width: 4px;
+            border-color: crimson;
+            background-color: bisque;
+            border-style: dashed;
+        }
+
+        h3 {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        .border {
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        .rounded-border {
+            border-radius: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .padding {
+            padding: 20px;
+        }
+
+        .border-left-only {
+            border-width: 0px;
+            border-left-width: 6px;
+        }
+
+        .bg-gray {
+            background-color: rgb(208, 208, 208);
+        }
+
+        .margin {
+            margin: 20px;
+        }
+
+        .sizing {
+            height: 120px;
+            width: 100%;
+            max-width: 800px;
+            max-height: 100px;
+        }
+
+        ul li {
+            list-style-type: square;
+            list-style-position: outside;
+            border: 1px black solid;
+            margin-bottom: 5px;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
+            background-color: green;
+            color: white;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+            padding: 5px;
+            text-align: center;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            border-radius: 200px;
+            border: 4px solid rgb(4, 32, 32);
+        }
+
+        button {
+            border: 0px;
+            padding: 15px 30px;
+            font-family: Helvetica, sans-serif;
+            background-color: forestgreen;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            font-size: 18px;
+            background-color: rgb(15, 92, 15);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="big-header padding margin sizing rounded-border">Header 1</h1>
+    <h2 class="big-header padding">Header 2</h2>
+    <h3 class="padding">Header 3</h3>
+    <h4 id="first-h4-header">Header 4</h4>
+    <h4>Second Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <p class="border padding custom-font" id="custom-text">Elit <b>minim adipisicing</b> nostrud commodo <strong>amet
+            laboris
+            laboris</strong>
+        laboris.
+        <br /> Excepteur
+        aliqua esse sint excepteur est
+        adipisicing ullamco sit fugiat aliqua sunt occaecat anim. <br> Lorem irure sit commodo tempor esse pariatur
+        dolor
+        proident laborum eiusmod nulla. <br> Cupidatat reprehenderit occaecat tempor aliqua elit cillum consectetur do.
+    </p>
+
+    <button>Click me</button>
+
+    <p class="border rounded-border padding border-left-only bg-gray">Qui id labore anim minim. Amet elit eu labore in
+        consectetur adipisicing
+        deserunt. In sint eiusmod
+        reprehenderit
+        nostrud. Qui nisi quis cupidatat mollit. Nostrud mollit aliqua elit magna laborum pariatur ipsum dolore
+        exercitation in incididunt dolore esse. Proident nostrud cillum Lorem fugiat nostrud est pariatur tempor sint
+        exercitation mollit enim cupidatat. Esse amet ex sit esse aliqua ut ipsum.</p>
+
+    <button class="ss3 science-student" />
+    <input class="ss3 art-student" />
+
+    <button class="big-header">Click me</button>
+
+    <img src="image.webp" width="200" alt="President of Nigeria" />
+
+    <a href="https://google.com">Open Google</a>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <table>
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ayomide Micheal</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samuel Johnson</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Faith Bassey</td>
+                <td>Female</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <input type="reset" placeholder="Name">
+</body>
+
+</html>
