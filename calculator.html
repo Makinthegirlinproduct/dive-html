@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Page</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+        div.form-input label {
+            margin-bottom: 10px;
+        }
+
+        div.form-input label,
+        div.form-input input {
+            display: block;
+        }
+
+        div.form-input input {
+            width: 100%;
+            padding: 8px 0px;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            background-color: rgb(22, 144, 103);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <h2>Calculator Page</h2>
+        </div>
+        <div class="form-input">
+            <label for="first-number">First Number</label>
+            <input type="number" id="first-number" />
+        </div>
+        <div class="form-input">
+            <label for="second-number">Second Number</label>
+            <input type="number" id="second-number" />
+        </div>
+        <div>
+            <button id="calculate-btn">Calculate Now</button>
+        </div>
+        <div class="form-input">
+            <label for="result">Result</label>
+            <input disabled type="number" id="result-input" />
+        </div>
+    </form>
+
+    <script>
+        function calculateNow(event) {
+            event.preventDefault()
+            const firstNumberInput = document.getElementById("first-number");
+            const firstNumber = firstNumberInput.value;
+
+            const secondNumberInput = document.getElementById("second-number");
+            const secondNumber = secondNumberInput.value;
+
+            const calculationResult = parseInt(firstNumber) - parseInt(secondNumber)
+
+            const resultInput = document.getElementById("result-input")
+            resultInput.value = calculationResult;
+        }
+
+        document.getElementById("calculate-btn").addEventListener("click", calculateNow)
+    </script>
+</body>
+
+</html>

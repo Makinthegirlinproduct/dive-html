@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+        div.form-input label {
+            margin-bottom: 10px;
+        }
+
+        div.form-input label,
+        div.form-input input {
+            display: block;
+        }
+
+        div.form-input input {
+            width: 100%;
+            padding: 8px 0px;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            background-color: rgb(22, 144, 103);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="form-action.html" method="GET">
+        <div>
+            <h2>Login Now</h2>
+            <p>Please enter your login details to access your account</p>
+        </div>
+        <div class="form-input">
+            <label for="email-input">Email</label>
+            <input name="email" type="email" id="email-input" value="test@example.com" />
+        </div>
+        <div class="form-input">
+            <label for="password-input">Password</label>
+            <input name="password" type="password" id="password-input" />
+        </div>
+        <div>
+            <button id="login-btn">Login Now</button>
+        </div>
+    </form>
+
+    <script>
+        const loginBtn = document.getElementById("login-btn");
+
+        function performLogin(event) {
+            event.preventDefault();
+
+            const emailInput = document.getElementById("email-input");
+            const email = emailInput.value;
+            console.log("Email:", email);
+
+            const passwordInput = document.getElementById("password-input")
+            const password = passwordInput.value;
+            console.log("Password:", password);
+
+        }
+
+        loginBtn.addEventListener("click", performLogin)
+    </script>
+</body>
+
+</html>
