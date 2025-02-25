@@ -57,9 +57,9 @@ function carIsLexus(car) {
 
 // console.log(carIsLexus(car3));
 
-// const lexusCars = cars.filter(carIsLexus)
+const lexusCars = cars.filter(carIsLexus)
 
-const lexusCars = cars.filter((item) => item.model === "Lexus");
+// const lexusCars = cars.filter((item) => item.model === "Lexus");
 
 console.log(lexusCars);
 
