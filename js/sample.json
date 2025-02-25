@@ -1,0 +1,6 @@
+{
+  "name": "John",
+  "age": 30,
+  "car": null,
+  "fav_numbers": [10, 22, 40, 5]
+}

@@ -15,9 +15,9 @@ async function myFunction() {
   const response = await fetch(url);
   console.log("API Request finished");
 
-  throw "Something went wrong";
+  // throw "Something went wrong";
 
-  //   console.log(response);
+    console.log(response);
   return "Hello Daniel";
 }
 

@@ -1,6 +1,12 @@
 console.log("Arrays.js is loaded");
 
-const names = ["Daniel", "Adebowale", "Lindiwe", "Goodnews"];
+const names = ["Daniel", "Adebowale", "Lindiwe", "Goodnews", "Samuel", "Johnson"];
+
+const slicedNames = names.slice(2,4)
+
+console.log(slicedNames)
+
+// console.log("Actual Array", names)
 
 // console.log(names.length);
 // console.log(names[1]);
@@ -13,7 +19,9 @@ const names = ["Daniel", "Adebowale", "Lindiwe", "Goodnews"];
 // names.push("Ayomide");
 // console.log(names);
 
-// const editedNames = names.map((name, index) => name + ` (Edited, ${index - 1})`);
+// const editedNames = names.map((name, index) => {
+//   return name + ` (Edited, ${index - 1})`;
+// });
 
 // const editedNames = names.map(function (name, index) {
 //   return name + ` (Edited, ${index})`;
@@ -57,10 +65,10 @@ function carIsLexus(car) {
 
 // console.log(carIsLexus(car3));
 
-const lexusCars = cars.filter(carIsLexus)
+const lexusCars = cars.filter(carIsLexus);
 
 // const lexusCars = cars.filter((item) => item.model === "Lexus");
 
-console.log(lexusCars);
+// console.log(lexusCars);
 
 // console.log(2 === "2")

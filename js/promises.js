@@ -16,10 +16,10 @@
 //   .catch((reason) => console.log("Log failed: ", reason));
 
 const promise = new Promise((resolve, reject) => {
-  const finalResult = 123;
-  resolve(finalResult);
+  // const finalResult = 123;
+  // resolve(finalResult);
 
-  //   reject("Something went wrong");
+  reject("Something went wrong");
 });
 
 promise
