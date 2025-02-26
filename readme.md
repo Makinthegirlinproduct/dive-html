@@ -16,3 +16,8 @@ Variable naming conventions
 2) You can use text and then numbers as the suffix.
 3) You can't use space in your variable name
 4) When the variable name consist of 2 works, you're to use either snake_case or camelCase
+
+
+<!-- JSON -->
+
+JSON - JavaScript Object Notation
